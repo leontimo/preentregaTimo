@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useCart } from "./CartContext";
 import { ToastContainer, toast } from "react-toastify";
-import { db } from "../firebaseconfig";
+import { db } from "../firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 
