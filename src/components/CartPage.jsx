@@ -8,7 +8,7 @@ const Cart = () => {
 
   if(isCheckingOut){
     //renderizar el componente si se a hecho click en el boton
-    return <Checkout />
+    return <Checkout products={cartItems}/>
   }
 
   if (cartItems.length === 0) {
