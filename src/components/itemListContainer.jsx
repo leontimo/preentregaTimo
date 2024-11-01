@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "../firebaseconfig";
 import { collection, getDocs } from "firebase/firestore";
 import Item from "./Item";
-import "../styles/navbar.scss";
+import "../styles/NavBar.scss";
 
 const ItemListContainer = ({ category }) => {
   const [products, setProducts] = useState([]);
