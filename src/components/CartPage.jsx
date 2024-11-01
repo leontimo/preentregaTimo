@@ -23,7 +23,7 @@ const Cart = () => {
     <div>
       <h2>Your Cart</h2>
       {cartItems.map(item => (
-        <div key={item.id}>
+        <div key={item.id+Math.random()}>
           <h3>{item.title}</h3>
           <p>Quantity: {item.quantity}</p>
           <p>Price: ${item.price * item.quantity}</p>

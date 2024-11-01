@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useCart } from "./CartContext";
 import { useNavigate } from "react-router-dom";
-import { db } from "../firebaseConfig"; 
+import { db } from "../firebaseconfig";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 
@@ -205,4 +205,3 @@ const Checkout = () => {
 
 
 export default Checkout;
-

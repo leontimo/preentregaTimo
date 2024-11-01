@@ -1,20 +1,19 @@
 import React from "react";
-import '../styles/NavBar.scss'
+import "../styles/navbar.scss";
 import { NavLink } from "react-router-dom";
 
 const Item = ({ item }) => {
-    return (
+  return (
+    <div className="item-card">
+      <img src={item.pictureUrl} alt={item.title} />
+      <h2>{item.title}</h2>
+      <span>${item.price}</span>
 
-        <div className="item-card">
-            <img src={item.image} alt={item.title} />
-            <h2>{item.title}</h2>
-            <span>${item.price}</span>
-
-            <NavLink to={`/detail/${item.id}`}>
-                <button>Detalles del producto</button>
-            </NavLink>
-        </div>
-    )
-}
+      <NavLink to={`/detail/${item.id}`}>
+        <button>Detalles del producto</button>
+      </NavLink>
+    </div>
+  );
+};
 
 export default Item;
